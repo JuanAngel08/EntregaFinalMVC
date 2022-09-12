@@ -1,0 +1,28 @@
+﻿ @using SistemaMotocicletas.Models;
+@{
+
+    ViewData["title"] = "Crear taller";
+}
+<h5 class="card-title">Inventario</h5>
+
+<form method="post" asp-controller="Store" asp-action="Create" class="row g-3">
+
+    <div class="col-md-4">
+        <label for="NombreTaller" class="form-label">Nombre Taller</label>
+        <input  type="text" class="form-control" id="NombreTaller" required>
+    </div>
+
+    <div class="col-md-4">
+        <label for="DireccionTaller" class="form-label">Direccion Taller</label>
+        <input type="text" class="form-control" id="DireccionTaller" required>
+    </div>
+
+       <div class="col-md-4">
+        <label for="ZonaTaller" class="form-label">Zona Taller</label>
+        <input   type="text" class="form-control" id="ZonaTaller" required>
+    </div>
+
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Crear Taller</button>
+    </div>
+</form>
